@@ -1,3 +1,3 @@
 cd /d %~dp0
-python runanki
+start pythonw runanki
 rem pause

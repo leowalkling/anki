@@ -11,6 +11,7 @@ from zipfile import ZipFile
 import aqt.forms
 import aqt
 from aqt.downloader import download
+import os
 
 # in the future, it would be nice to save the addon id and unzippped file list
 # to the config so that we can clear up all files and check for updates

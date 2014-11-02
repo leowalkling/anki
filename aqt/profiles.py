@@ -192,7 +192,7 @@ and no other programs are accessing your profile folders, then try again."""))
         return path
 
     def addonFolder(self):
-        return self._ensureExists(os.path.join(self.base, "addons"))
+        return self._ensureExists(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "addons")))
 
     def backupFolder(self):
         return self._ensureExists(
@@ -215,7 +215,7 @@ and no other programs are accessing your profile folders, then try again."""))
                 loc = QStandardPaths.writeableLocation(QStandardPaths.DocumentsLocation)
             else:
                 loc = QDesktopServices.storageLocation(QDesktopServices.DocumentsLocation)
-            return os.path.join(loc, "Anki")
+            return os.path.join(loc, "Anki-Debug")
         elif isMac:
             return os.path.expanduser("~/Documents/Anki")
         else:

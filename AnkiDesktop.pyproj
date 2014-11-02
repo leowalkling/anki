@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1f57e05d-8265-4a6f-a61c-e8e82730f9e3}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>runanki</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="addons\LICENSE" />
+    <Content Include="anki.ico" />
+    <Content Include="anki.png" />
+    <Content Include="designer\icons\add16.png" />
+    <Content Include="designer\icons\addtag.png" />
+    <Content Include="designer\icons\addtag16.png" />
+    <Content Include="designer\icons\anki-logo-thin.png" />
+    <Content Include="designer\icons\anki-logo.svg" />
+    <Content Include="designer\icons\anki-logo2.svg" />
+    <Content Include="designer\icons\anki-logo_black.png" />
+    <Content Include="designer\icons\anki-logo_BW.svg" />
+    <Content Include="designer\icons\anki-logo_white.png" />
+    <Content Include="designer\icons\anki-tag.png" />
+    <Content Include="designer\icons\anki.png" />
+    <Content Include="designer\icons\anki.svg" />
+    <Content Include="designer\icons\ankibw.png" />
+    <Content Include="designer\icons\application-exit.png" />
+    <Content Include="designer\icons\arrow-down-double.png" />
+    <Content Include="designer\icons\arrow-down.png" />
+    <Content Include="designer\icons\arrow-up-double.png" />
+    <Content Include="designer\icons\arrow-up.png" />
+    <Content Include="designer\icons\clock-icon.png" />
+    <Content Include="designer\icons\clock16.png" />
+    <Content Include="designer\icons\colors.png" />
+    <Content Include="designer\icons\configure.png" />
+    <Content Include="designer\icons\contents.png" />
+    <Content Include="designer\icons\contents2.png" />
+    <Content Include="designer\icons\deck16.png" />
+    <Content Include="designer\icons\delete16.png" />
+    <Content Include="designer\icons\deletetag.png" />
+    <Content Include="designer\icons\deletetag16.png" />
+    <Content Include="designer\icons\document-export.png" />
+    <Content Include="designer\icons\document-import.png" />
+    <Content Include="designer\icons\document-new.png" />
+    <Content Include="designer\icons\download.png" />
+    <Content Include="designer\icons\edit-find 2.png" />
+    <Content Include="designer\icons\edit-find-replace.png" />
+    <Content Include="designer\icons\edit-find.png" />
+    <Content Include="designer\icons\edit-redo.png" />
+    <Content Include="designer\icons\edit-rename.png" />
+    <Content Include="designer\icons\edit-undo.png" />
+    <Content Include="designer\icons\edit.png" />
+    <Content Include="designer\icons\editclear.png" />
+    <Content Include="designer\icons\editdelete.png" />
+    <Content Include="designer\icons\emblem-favorite-dark.png" />
+    <Content Include="designer\icons\emblem-favorite-off.png" />
+    <Content Include="designer\icons\emblem-favorite.png" />
+    <Content Include="designer\icons\emblem-important.png" />
+    <Content Include="designer\icons\fileclose.png" />
+    <Content Include="designer\icons\find.png" />
+    <Content Include="designer\icons\folder_image.png" />
+    <Content Include="designer\icons\folder_sound.png" />
+    <Content Include="designer\icons\format-stroke-color.png" />
+    <Content Include="designer\icons\games-solve.png" />
+    <Content Include="designer\icons\gears.png" />
+    <Content Include="designer\icons\go-first.png" />
+    <Content Include="designer\icons\go-jump-today.png" />
+    <Content Include="designer\icons\go-last.png" />
+    <Content Include="designer\icons\go-next.png" />
+    <Content Include="designer\icons\go-previous.png" />
+    <Content Include="designer\icons\green.png" />
+    <Content Include="designer\icons\help-contents.png" />
+    <Content Include="designer\icons\help-hint.png" />
+    <Content Include="designer\icons\help.png" />
+    <Content Include="designer\icons\image.png" />
+    <Content Include="designer\icons\info.png" />
+    <Content Include="designer\icons\kblogger.png" />
+    <Content Include="designer\icons\kbugbuster.png" />
+    <Content Include="designer\icons\kexi.png" />
+    <Content Include="designer\icons\khtml_kget.png" />
+    <Content Include="designer\icons\kpersonalizer.png" />
+    <Content Include="designer\icons\layout.png" />
+    <Content Include="designer\icons\list-add.png" />
+    <Content Include="designer\icons\mail-attachment.png" />
+    <Content Include="designer\icons\math_matrix.png" />
+    <Content Include="designer\icons\math_sqrt.png" />
+    <Content Include="designer\icons\media-playback-pause.png" />
+    <Content Include="designer\icons\media-playback-start.png" />
+    <Content Include="designer\icons\media-playback-start2.png" />
+    <Content Include="designer\icons\media-playback-stop.png" />
+    <Content Include="designer\icons\media-record.png" />
+    <Content Include="designer\icons\none.png" />
+    <Content Include="designer\icons\package_games_card.png" />
+    <Content Include="designer\icons\pause16.png" />
+    <Content Include="designer\icons\pause_off16.png" />
+    <Content Include="designer\icons\player-time.png" />
+    <Content Include="designer\icons\plus-circle.png" />
+    <Content Include="designer\icons\plus16.png" />
+    <Content Include="designer\icons\preferences-desktop-font.png" />
+    <Content Include="designer\icons\preferences-plugin.png" />
+    <Content Include="designer\icons\product_design.png" />
+    <Content Include="designer\icons\rating.png" />
+    <Content Include="designer\icons\speaker.png" />
+    <Content Include="designer\icons\spreadsheet.png" />
+    <Content Include="designer\icons\sqlitebrowser.png" />
+    <Content Include="designer\icons\star16.png" />
+    <Content Include="designer\icons\star_off16.png" />
+    <Content Include="designer\icons\stock_group.png" />
+    <Content Include="designer\icons\stock_new_template.png" />
+    <Content Include="designer\icons\stock_new_template_blue.png" />
+    <Content Include="designer\icons\stock_new_template_green.png" />
+    <Content Include="designer\icons\stock_new_template_red.png" />
+    <Content Include="designer\icons\system-shutdown.png" />
+    <Content Include="designer\icons\system-software-update.png" />
+    <Content Include="designer\icons\tex.png" />
+    <Content Include="designer\icons\text-speak.png" />
+    <Content Include="designer\icons\text-xml.png" />
+    <Content Include="designer\icons\text_bold.png" />
+    <Content Include="designer\icons\text_clear.png" />
+    <Content Include="designer\icons\text_italic.png" />
+    <Content Include="designer\icons\text_remove.png" />
+    <Content Include="designer\icons\text_sub.png" />
+    <Content Include="designer\icons\text_super.png" />
+    <Content Include="designer\icons\text_under.png" />
+    <Content Include="designer\icons\user-identity.png" />
+    <Content Include="designer\icons\view-calendar-tasks.png" />
+    <Content Include="designer\icons\view-pim-calendar.png" />
+    <Content Include="designer\icons\view-pim-news.png" />
+    <Content Include="designer\icons\view-refresh.png" />
+    <Content Include="designer\icons\view-sort-ascending.png" />
+    <Content Include="designer\icons\view-sort-descending.png" />
+    <Content Include="designer\icons\view-statistics.png" />
+    <Content Include="designer\icons\view_text.png" />
+    <Content Include="designer\icons\_sources.txt" />
+    <Content Include="tests\support\fake.png" />
+    <Content Include="tests\support\text-2fields.txt" />
+    <Content Include="tests\support\text-tags.txt" />
+    <Content Include="tests\support\text-update.txt" />
+    <Content Include="thirdparty\httplib2\cacerts.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addons\jsbooster\clayout_hack.py" />
+    <Compile Include="addons\jsbooster\location_hack.py" />
+    <Compile Include="addons\jsbooster\review_hack.py" />
+    <Compile Include="addons\jsbooster\__init__.py" />
+    <Compile Include="addons\js_booster.py" />
+    <Compile Include="addons\randomquestions\editor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="addons\randomquestions\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="addons\random_questions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="anki\cards.py" />
+    <Compile Include="anki\collection.py" />
+    <Compile Include="anki\consts.py" />
+    <Compile Include="anki\db.py" />
+    <Compile Include="anki\decks.py" />
+    <Compile Include="anki\errors.py" />
+    <Compile Include="anki\exporting.py" />
+    <Compile Include="anki\find.py" />
+    <Compile Include="anki\hooks.py" />
+    <Compile Include="anki\importing\anki1.py" />
+    <Compile Include="anki\importing\anki2.py" />
+    <Compile Include="anki\importing\apkg.py" />
+    <Compile Include="anki\importing\base.py" />
+    <Compile Include="anki\importing\csvfile.py" />
+    <Compile Include="anki\importing\mnemo.py" />
+    <Compile Include="anki\importing\noteimp.py" />
+    <Compile Include="anki\importing\pauker.py" />
+    <Compile Include="anki\importing\supermemo_xml.py" />
+    <Compile Include="anki\importing\__init__.py" />
+    <Compile Include="anki\js.py" />
+    <Compile Include="anki\lang.py" />
+    <Compile Include="anki\latex.py" />
+    <Compile Include="anki\media.py" />
+    <Compile Include="anki\models.py" />
+    <Compile Include="anki\notes.py" />
+    <Compile Include="anki\sched.py" />
+    <Compile Include="anki\sound.py" />
+    <Compile Include="anki\stats.py" />
+    <Compile Include="anki\statsbg.py" />
+    <Compile Include="anki\stdmodels.py" />
+    <Compile Include="anki\storage.py" />
+    <Compile Include="anki\sync.py" />
+    <Compile Include="anki\tags.py" />
+    <Compile Include="anki\template\furigana.py" />
+    <Compile Include="anki\template\hint.py" />
+    <Compile Include="anki\template\template.py" />
+    <Compile Include="anki\template\view.py" />
+    <Compile Include="anki\template\__init__.py" />
+    <Compile Include="anki\upgrade.py" />
+    <Compile Include="anki\utils.py" />
+    <Compile Include="anki\__init__.py" />
+    <Compile Include="aqt\about.py" />
+    <Compile Include="aqt\addcards.py" />
+    <Compile Include="aqt\addons.py" />
+    <Compile Include="aqt\browser.py" />
+    <Compile Include="aqt\clayout.py" />
+    <Compile Include="aqt\customstudy.py" />
+    <Compile Include="aqt\deckbrowser.py" />
+    <Compile Include="aqt\deckchooser.py" />
+    <Compile Include="aqt\deckconf.py" />
+    <Compile Include="aqt\downloader.py" />
+    <Compile Include="aqt\dyndeckconf.py" />
+    <Compile Include="aqt\editcurrent.py" />
+    <Compile Include="aqt\editor.py" />
+    <Compile Include="aqt\errors.py" />
+    <Compile Include="aqt\exporting.py" />
+    <Compile Include="aqt\fields.py" />
+    <Compile Include="aqt\forms\about.py" />
+    <Compile Include="aqt\forms\addcards.py" />
+    <Compile Include="aqt\forms\addfield.py" />
+    <Compile Include="aqt\forms\addmodel.py" />
+    <Compile Include="aqt\forms\browser.py" />
+    <Compile Include="aqt\forms\browserdisp.py" />
+    <Compile Include="aqt\forms\browseropts.py" />
+    <Compile Include="aqt\forms\changemap.py" />
+    <Compile Include="aqt\forms\changemodel.py" />
+    <Compile Include="aqt\forms\customstudy.py" />
+    <Compile Include="aqt\forms\dconf.py" />
+    <Compile Include="aqt\forms\debug.py" />
+    <Compile Include="aqt\forms\dyndconf.py" />
+    <Compile Include="aqt\forms\editaddon.py" />
+    <Compile Include="aqt\forms\editcurrent.py" />
+    <Compile Include="aqt\forms\edithtml.py" />
+    <Compile Include="aqt\forms\exporting.py" />
+    <Compile Include="aqt\forms\fields.py" />
+    <Compile Include="aqt\forms\finddupes.py" />
+    <Compile Include="aqt\forms\findreplace.py" />
+    <Compile Include="aqt\forms\getaddons.py" />
+    <Compile Include="aqt\forms\icons_rc.py" />
+    <Compile Include="aqt\forms\importing.py" />
+    <Compile Include="aqt\forms\main.py" />
+    <Compile Include="aqt\forms\modelopts.py" />
+    <Compile Include="aqt\forms\models.py" />
+    <Compile Include="aqt\forms\preferences.py" />
+    <Compile Include="aqt\forms\preview.py" />
+    <Compile Include="aqt\forms\profiles.py" />
+    <Compile Include="aqt\forms\reposition.py" />
+    <Compile Include="aqt\forms\reschedule.py" />
+    <Compile Include="aqt\forms\setgroup.py" />
+    <Compile Include="aqt\forms\setlang.py" />
+    <Compile Include="aqt\forms\stats.py" />
+    <Compile Include="aqt\forms\studydeck.py" />
+    <Compile Include="aqt\forms\taglimit.py" />
+    <Compile Include="aqt\forms\template.py" />
+    <Compile Include="aqt\forms\__init__.py" />
+    <Compile Include="aqt\importing.py" />
+    <Compile Include="aqt\main.py" />
+    <Compile Include="aqt\modelchooser.py" />
+    <Compile Include="aqt\models.py" />
+    <Compile Include="aqt\overview.py" />
+    <Compile Include="aqt\preferences.py" />
+    <Compile Include="aqt\profiles.py" />
+    <Compile Include="aqt\progress.py" />
+    <Compile Include="aqt\qt.py" />
+    <Compile Include="aqt\reviewer.py" />
+    <Compile Include="aqt\sound.py" />
+    <Compile Include="aqt\stats.py" />
+    <Compile Include="aqt\studydeck.py" />
+    <Compile Include="aqt\sync.py" />
+    <Compile Include="aqt\tagedit.py" />
+    <Compile Include="aqt\taglimit.py" />
+    <Compile Include="aqt\toolbar.py" />
+    <Compile Include="aqt\update.py" />
+    <Compile Include="aqt\upgrade.py" />
+    <Compile Include="aqt\utils.py" />
+    <Compile Include="aqt\webview.py" />
+    <Compile Include="aqt\__init__.py" />
+    <Compile Include="oldanki\cards.py" />
+    <Compile Include="oldanki\db.py" />
+    <Compile Include="oldanki\deck.py" />
+    <Compile Include="oldanki\errors.py" />
+    <Compile Include="oldanki\exporting.py" />
+    <Compile Include="oldanki\facts.py" />
+    <Compile Include="oldanki\fonts.py" />
+    <Compile Include="oldanki\graphs.py" />
+    <Compile Include="oldanki\history.py" />
+    <Compile Include="oldanki\hooks.py" />
+    <Compile Include="oldanki\lang.py" />
+    <Compile Include="oldanki\latex.py" />
+    <Compile Include="oldanki\media.py" />
+    <Compile Include="oldanki\models.py" />
+    <Compile Include="oldanki\sound.py" />
+    <Compile Include="oldanki\stats.py" />
+    <Compile Include="oldanki\stdmodels.py" />
+    <Compile Include="oldanki\sync.py" />
+    <Compile Include="oldanki\tags.py" />
+    <Compile Include="oldanki\template\template.py" />
+    <Compile Include="oldanki\template\view.py" />
+    <Compile Include="oldanki\template\__init__.py" />
+    <Compile Include="oldanki\utils.py" />
+    <Compile Include="oldanki\__init__.py" />
+    <Compile Include="tests\shared.py" />
+    <Compile Include="tests\test_cards.py" />
+    <Compile Include="tests\test_collection.py" />
+    <Compile Include="tests\test_decks.py" />
+    <Compile Include="tests\test_exporting.py" />
+    <Compile Include="tests\test_find.py" />
+    <Compile Include="tests\test_importing.py" />
+    <Compile Include="tests\test_latex.py" />
+    <Compile Include="tests\test_media.py" />
+    <Compile Include="tests\test_models.py" />
+    <Compile Include="tests\test_sched.py" />
+    <Compile Include="tests\test_stats.py" />
+    <Compile Include="tests\test_sync.py" />
+    <Compile Include="tests\test_undo.py" />
+    <Compile Include="tests\test_upgrade.py" />
+    <Compile Include="tests\__init__.py" />
+    <Compile Include="thirdparty\BeautifulSoup.py" />
+    <Compile Include="thirdparty\httplib2\iri2uri.py" />
+    <Compile Include="thirdparty\httplib2\socks.py" />
+    <Compile Include="thirdparty\httplib2\__init__.py" />
+    <Compile Include="thirdparty\pyaudio.py" />
+    <Compile Include="thirdparty\send2trash\plat_osx.py" />
+    <Compile Include="thirdparty\send2trash\plat_other.py" />
+    <Compile Include="thirdparty\send2trash\plat_win.py" />
+    <Compile Include="thirdparty\send2trash\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="addons\" />
+    <Folder Include="addons\jsbooster\" />
+    <Folder Include="addons\randomquestions\" />
+    <Folder Include="anki" />
+    <Folder Include="anki\importing" />
+    <Folder Include="anki\template" />
+    <Folder Include="aqt" />
+    <Folder Include="aqt\forms" />
+    <Folder Include="designer\" />
+    <Folder Include="designer\icons" />
+    <Folder Include="oldanki" />
+    <Folder Include="oldanki\template" />
+    <Folder Include="tests" />
+    <Folder Include="tests\support" />
+    <Folder Include="thirdparty" />
+    <Folder Include="thirdparty\httplib2" />
+    <Folder Include="thirdparty\send2trash" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
