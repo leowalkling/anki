@@ -4,6 +4,8 @@
 import json
 import sys
 import math
+import re
+import urllib
 from anki.hooks import runHook
 from aqt.qt import *
 from aqt.utils import openLink
@@ -85,6 +87,18 @@ class AnkiWebPage(QWebEnginePage):
 
     def _onCmd(self, str):
         return self._onBridgeCmd(str)
+
+    def setHtml(self, html):
+        try:
+            base_url = QUrl(
+                urllib.parse.unquote(
+                    re.search('<base href="(.*?)">', html).group(1)) +
+                "__viewer__.html")
+        except AttributeError as ae:
+            super(AnkiWebPage, self).setHtml(self, html)
+        else:
+            super(AnkiWebPage, self).setHtml(self, html, base_url)
+
 
 # Main web view
 ##########################################################################
